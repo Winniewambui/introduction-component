@@ -1,5 +1,4 @@
-*{
-    
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,17 +57,42 @@ padding: 12px 60px;
 border-radius: 10px;
 box-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
   }
-input{
+.form-control input{
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
-    padding: 1em 3em;
+    padding: 1em 8em;
     width: 80%;
+    margin:10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 input:hover{
     border: 1px solid hsl(249, 44%, 46%) ;
 }
+input:focus{
+    border-color: 1px solid hsl(249, 44%, 46%) ;
+}
+/* input:not(:focus) {
+    border: 2px solid black;
+  } */
 input::placeholder{
     color: hsl(249, 10%, 26%) ;
+}
+.form-control {
+    position: relative;
+}
+.icon-img{
+position: absolute;
+top: 20px;
+right: 50px;
+visibility: hidden;
+}
+small{
+position: absolute;
+bottom: -10px;
+right: 50px;
+visibility: hidden;
 }
 #button-btn{
     background-color: hsl(154, 59%, 51%);
@@ -81,9 +105,9 @@ input::placeholder{
     cursor: pointer;
     box-shadow: 0px 4px 4px black;
 }
-.hide{
+/* .hide{ */
     /* overflow: hidden; */
-    display: none;
+    /* display: none; 
     text-transform: capitalize;
    color:hsl(0, 100%, 74%) ;
    font-size: 600;
@@ -92,8 +116,8 @@ input::placeholder{
    justify-self:right;
    text-align: right; */
    /* border: 1px solid hsl(246, 25%, 77%);
-   margin-right: 5px; */
-}
+   margin-right: 5px; 
+}*/
 h3{
     Font-size: 12px;
     font-weight: 400;
